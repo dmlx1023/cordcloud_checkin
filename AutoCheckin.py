@@ -79,6 +79,7 @@ def start_checkin(username,password,url):
        
 
         cookies = driver.get_cookies()
+        print(cookies)
         c={}
         for cookie in cookies:
             cookie = dict(cookie)
