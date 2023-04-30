@@ -74,9 +74,9 @@ def start_checkin(username,password,url):
         password_input = driver.find_element(by=By.ID, value="passwd")
         password_input.send_keys(password)
         driver.find_element(by=By.ID, value="login").click()
-        text = driver.find_element(by=By.XPATH, value="/html/body/main/div[2]/section/div[2]/div[1]/div[1]/div/div[2]/p[2]").text
+       
         print("Login success!")
-        print(text)
+       
 
         cookies = driver.get_cookies()
         c={}
